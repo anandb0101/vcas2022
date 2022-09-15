@@ -34,15 +34,19 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
-  <script>
-    function register() {
-      alert("Sorry! Registration is not started yet.");
-    }
-
-    function popUpNA() {
-      alert("Sorry! Not Available yet.")
-    }
-  </script>
+    <script>
+      function registerationNotStarted() {
+        alert("Sorry! Registration is not started yet.");
+      }
+  
+      function popUpNA() {
+        alert("Sorry! Not Available yet.")
+      }
+  
+      function popUpScheduleNA() {
+        alert("The schedule of the conference VCAS 2022 and presentation of the accepted papers will be available soon")
+      }
+    </script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -66,16 +70,16 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <!-- <li><img src="./assets/img/ultratech.png" width="120" height="50" alt=""></li> -->
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="https://easychair.org/conferences/?conf=vcas2022">SUBMIT PAPERS</a></li>
 
-          <li class="dropdown"><a href="#section-committee"><span>COMMITTEE</span> <i
+          <li class="dropdown"><a href="./index.html#section-committee"><span>COMMITTEE</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-committee">ORGANIZING COMMITTEE</a></li>
-              <li><a href="#section-committee">ADVISORY COMMITTEE</a></li>
-              <li><a href="#section-committee">TRACK CHAIRS</a></li>
-              <li><a href="#section-committee">TECHNICAL PROGRAM COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">ORGANIZING COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">ADVISORY COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">TRACK CHAIRS</a></li>
+              <li><a href="./index.html#section-committee">TECHNICAL PROGRAM COMMITTEE</a></li>
 
             </ul>
           </li>
@@ -83,28 +87,28 @@
           <li class="dropdown"><a href="#section-callForPapers"><span>CALLS</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-callForPapers">CALL FOR PAPERS</a></li>
-              <li><a href="#section-importantDates">IMPORTANT DATES</a></li>
-              <li><a href="#section-registrationFee">REGISTRATION FEE</a></li>
-              <li><a href="#section-publications">PUBLICATIONS</a></li>
-              <li><a href="#section-tutorialsAndWorkshop">CALL FOR TUTORIALS AND WORKSHOP</a></li>
-              <li><a href="#section-callForSponsership">CALL FOR SPONSORSHIP</a></li>
+              <li><a href="./index.html#section-callForPapers">CALL FOR PAPERS</a></li>
+              <li><a href="./index.html#section-importantDates">IMPORTANT DATES</a></li>
+              <li><a href="./index.html#section-registrationFee">REGISTRATION FEE</a></li>
+              <li><a href="./index.html#section-publications">PUBLICATIONS</a></li>
+              <li><a href="./index.html#section-tutorialsAndWorkshop">CALL FOR TUTORIALS AND WORKSHOP</a></li>
+              <li><a href="./index.html#section-callForSponsership">CALL FOR SPONSORSHIP</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="#"><span>PROGRAM</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a onclick="popUpNA()">SCHEDULE</a></li>
+              <li><a onclick="popUpScheduleNA()">SCHEDULE</a></li>
               <!-- <li><a href="./downloads/VCAS_2022_Schedule.pdf">SCHEDULE</a></li> -->
-              <li><a href="#section_important_dates">KEYNOTE & TUTORIAL</a></li>
+              <li><a href="./index.html#section-tutorialsAndWorkshop">KEYNOTE & TUTORIAL</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="#"><span>VENUE</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-location">LOCATION</a></li>
-              <li><a href="#section-howToReach">HOW TO REACH</a></li>
-              <li><a href="#section-howToReach">ACCOMODATION ASSISTANCE</a></li>
+              <li><a href="./index.html#section-location">LOCATION</a></li>
+              <li><a href="./index.html#section-howToReach">HOW TO REACH</a></li>
+              <li><a href="./index.html#section-howToReach">ACCOMODATION ASSISTANCE</a></li>
             </ul>
           </li>
 
@@ -141,7 +145,7 @@
               <li><a href="#gallery.html">GALLERY</a></li>
             </ul>
           </li>
-          <li><a onclick="register()">REGISTRATION</a></li>
+          <li><a href="./register.html">REGISTRATION</a></li>
           <br>
           <li><img src="./assets/img/springer.jpg" width="150" height="50" alt=""></li>
         </ul>
@@ -180,22 +184,21 @@
         <div class="row justify-content-center">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/web team/sumit.jpg" class="img-fluid" alt="">
+                <img src="assets/img/web team/anand.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/anand-boddh/"><i class="bi bi-linkedin"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sumit Singh</h4>
+                <h4>Anand Boddh</h4>
                 <span>
                   <h6>ECE (2019-2023)</h6>
                 </span>
-                <!-- <span>Chief Executive Officer</span> -->
+                <!-- <span>CTO</span> -->
               </div>
             </div>
           </div>
@@ -205,10 +208,9 @@
               <div class="member-img">
                 <img src="assets/img/web team/nandita.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -222,22 +224,21 @@
           </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member" data-aos="fade-up">
               <div class="member-img">
-                <img src="assets/img/web team/anand.jpg" class="img-fluid" alt="">
+                <img src="assets/img/web team/sumit.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Anand Boddh</h4>
+                <h4>Sumit Singh</h4>
                 <span>
                   <h6>ECE (2019-2023)</h6>
                 </span>
-                <!-- <span>CTO</span> -->
+                <!-- <span>Chief Executive Officer</span> -->
               </div>
             </div>
           </div>

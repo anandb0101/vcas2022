@@ -33,7 +33,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
-
+    <script>
+      function registerationNotStarted() {
+        alert("Sorry! Registration is not started yet.");
+      }
+  
+      function popUpNA() {
+        alert("Sorry! Not Available yet.")
+      }
+  
+      function popUpScheduleNA() {
+        alert("The schedule of the conference VCAS 2022 and presentation of the accepted papers will be available soon")
+      }
+    </script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -51,17 +63,16 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><img src="./assets/img/springer.jpg" width="120" height="50" alt=""></li>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="https://easychair.org/conferences/?conf=vcas2022">SUBMIT PAPERS</a></li>
 
-          <li class="dropdown"><a href="#section-committee"><span>COMMITTEE</span> <i
+          <li class="dropdown"><a href="./index.html#section-committee"><span>COMMITTEE</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-committee">ORGANIZING COMMITTEE</a></li>
-              <li><a href="#section-committee">ADVISORY COMMITTEE</a></li>
-              <li><a href="#section-committee">TRACK CHAIRS</a></li>
-              <li><a href="#section-committee">TECHNICAL PROGRAM COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">ORGANIZING COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">ADVISORY COMMITTEE</a></li>
+              <li><a href="./index.html#section-committee">TRACK CHAIRS</a></li>
+              <li><a href="./index.html#section-committee">TECHNICAL PROGRAM COMMITTEE</a></li>
 
             </ul>
           </li>
@@ -69,28 +80,28 @@
           <li class="dropdown"><a href="#section-callForPapers"><span>CALLS</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-callForPapers">CALL FOR PAPERS</a></li>
-              <li><a href="#section-importantDates">IMPORTANT DATES</a></li>
-              <li><a href="#section-registrationFee">REGISTRATION FEE</a></li>
-              <li><a href="#section-publications">PUBLICATIONS</a></li>
-              <li><a href="#section-tutorialsAndWorkshop">CALL FOR TUTORIALS AND WORKSHOP</a></li>
-              <li><a href="#section-callForSponsership">CALL FOR SPONSORSHIP</a></li>
+              <li><a href="./index.html#section-callForPapers">CALL FOR PAPERS</a></li>
+              <li><a href="./index.html#section-importantDates">IMPORTANT DATES</a></li>
+              <li><a href="./index.html#section-registrationFee">REGISTRATION FEE</a></li>
+              <li><a href="./index.html#section-publications">PUBLICATIONS</a></li>
+              <li><a href="./index.html#section-tutorialsAndWorkshop">CALL FOR TUTORIALS AND WORKSHOP</a></li>
+              <li><a href="./index.html#section-callForSponsership">CALL FOR SPONSORSHIP</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="#"><span>PROGRAM</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a onclick="popUpNA()">SCHEDULE</a></li>
+              <li><a onclick="popUpScheduleNA()">SCHEDULE</a></li>
               <!-- <li><a href="./downloads/VCAS_2022_Schedule.pdf">SCHEDULE</a></li> -->
-              <li><a href="#section_important_dates">KEYNOTE & TUTORIAL</a></li>
+              <li><a href="./index.html#section-tutorialsAndWorkshop">KEYNOTE & TUTORIAL</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="#"><span>VENUE</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#section-location">LOCATION</a></li>
-              <li><a href="#section-howToReach">HOW TO REACH</a></li>
-              <li><a href="#section-howToReach">ACCOMODATION ASSISTANCE</a></li>
+              <li><a href="./index.html#section-location">LOCATION</a></li>
+              <li><a href="./index.html#section-howToReach">HOW TO REACH</a></li>
+              <li><a href="./index.html#section-howToReach">ACCOMODATION ASSISTANCE</a></li>
             </ul>
           </li>
 
@@ -127,7 +138,7 @@
               <li><a href="#gallery.html">GALLERY</a></li>
             </ul>
           </li>
-          <li><a onclick="register()">REGISTRATION</a></li>
+          <li><a class="active" href="./register.html">REGISTRATION</a></li>
           <br>
           <li><img src="./assets/img/springer.jpg" width="150" height="50" alt=""></li>
         </ul>
@@ -145,21 +156,59 @@
           <div class="section-title">
             <h1>REGISTRATION</h1>
           </div>
-          <h3 style="text-align:justify;"> After completing the payment, authors are requested to do online registration
-            via <a
-              href=""
-              style="color: blue;">“Registration Link"</a> (It is mandatory to fill this Google Form to complete the
-            registration).
-          </h3>
-          <br>
-          <div class="registration-link">
-            <p style="text-align: center;"><a href="https://www.springer.com/us/authors-editors/conference-proceedings"
-                style="color: blue;">GUIDELINES FOR AUTHORS VCAS 2022</a></p>
-            <p style="text-align: center;"><a href="" style="color: blue;">CONSENT</a></p>
-            <p style="text-align: center;"><a href="" style="color: blue;">UNDERTAKING</a>
-            </p>
+          <div>
+            <u>
+              <h4 class="heading">Registration Process :</h4>
+            </u>
           </div>
-
+          <br>
+          <div>
+            <h3 style="text-align: left;">Step 1/3. </h3>
+            <h5> Pay the registration fee at the below payment details -</h5>
+            <p><strong style="color: red;">Note:</strong> You must mention the payment remark as "Registration Fee for VCAS 2022" </p>
+            <div>
+              <h3 style="text-align: center;">PAYMENT DETAILS</h2>
+              <p style="color: black;font-size: 20px; text-align: center;">
+                A/C Holder Name:  NON FORMAL CONTINUING OF EDU<br>
+                A/C No.:  10424975574<br>
+                Bank Name:  State Bank of India<br>
+                Bank Address:  MNNIT Branch, MNNIT Allahabad, Prayagraj<br>
+                IFSC: SBIN00002580 [Alphabets appearing after SBIN are ‘Zero’, not O (English alphabet)]<br></p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div>
+            <h3 style="text-align: left;">Step 2/3. </h3>
+            <h5> After completing the payment successfully, following documents are required to complete the registration process </h5>
+            <ul style="list-style-type:disc; text-align: left; margin-left: 5em;">
+              <li> <a style="color: blue;" href="./downloads/consent.doc">Consent</a> (in .pdf format)</li>
+              <li>Scanned copy of fee receipt (file name: paper-id_fee.pdf)</li>
+              <li>Paper source file (docx or LaTeX files in single zip file) (file name: paper-id_source)</li>
+              <li>Camera Ready Manuscript (file name: paper-id_cameraready.pdf)</li>
+              <li>Response to Reviewers Comment (file name: paper-id_reviewers-reply.pdf)</li>
+              <li>Signed copy of <a style="color: blue;" href="./downloads/undertaking.docx">Undertaking</a> (file name: paper-id_undertaking.pdf</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <div>
+            <h3 style="text-align: left;">Step 3/3. </h3>  
+            <h5 style="text-align:justify;"> Authors are requested to do online registration
+              via <a
+                href="https://forms.gle/vj5ijP5fuX2MMHM36"
+                style="color: blue;">“Registration Link"</a> (It is mandatory to fill this Google Form to complete the
+              registration).
+            </h5>
+            <br>
+            <!-- <div class="registration-link">
+              <p style="text-align: center;"><a href="https://www.springer.com/us/authors-editors/conference-proceedings"
+                  style="color: blue;">GUIDELINES FOR AUTHORS VCAS 2022</a></p>
+              <p style="text-align: center;"><a href="" style="color: blue;">CONSENT</a></p>
+              <p style="text-align: center;"><a href="" style="color: blue;">UNDERTAKING</a>
+              </p>
+            </div> -->
+          </div>
           </p>
           <hr>
           <div class="section-title">
@@ -224,16 +273,6 @@
                 </table>
             </div>
           </div>
-          <hr>
-          <div id="section-registration" class="section-title"><br>
-            <h2>PAYMENT DETAILS</h2>
-            <p style="color: black;font-size: 20px;">A/C Holder Name: VCAS<br>
-              A/C No.: 77660200000183<br>
-              Bank Name: Bank of Baroda<br>
-              Bank Address: MNNIT Branch, MNNIT Allahabad, Prayagraj.<br>
-              IFSC: BARB0VJMNRE<br></p>
-          </div>
-
         </div>
       </div>
 
